@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>calculater</title>
+  </head>
+  <body>
+    <div class="box">
+      <!-- create display -->
+      <div class="main-display">
+        <input type="text" readonly size="18" class="display" id="txtScreen" value="0" />
+      </div>
+      <!-- create button -->
+      <div class="main-btn">
+        <input type="button" value="7" class="btn" onclick="setScreen('7')">
+        <input type="button" value="8" class="btn" onclick="setScreen('8')">
+        <input type="button" value="9" class="btn" onclick="setScreen('9')">
+        <input type="button" value="/" class="btn" onclick="setOperator('/')">
+      </br>
+      
+        <input type="button" value="4" class="btn" onclick="setScreen('4')">
+        <input type="button" value="5" class="btn" onclick="setScreen('5')">
+        <input type="button" value="6" class="btn" onclick="setScreen('6')">
+        <input type="button" value="*" class="btn" onclick="setOperator('*')">
+      </br>
+     
+        <input type="button" value="1" class="btn" onclick="setScreen('1')">
+        <input type="button" value="2" class="btn" onclick="setScreen('2')">
+        <input type="button" value="3" class="btn" onclick="setScreen('3')">
+        <input type="button" value="+" class="btn" onclick="setOperator('+')">
+      </br>
+
+        <input type="button" value="0" class="btn" onclick="setScreen('0')">    
+        <input type="button" value="C" class="btn" onclick="reset()">
+        <input type="button" value="=" class="btn" onclick="getAnswer()">
+        <input type="button" value="-" class="btn" onclick="setOperator('-')">
+      </div>
+      <p>Create by Madhusankha</p>
+    </div>
+
+    <!--js program part -->
+    <script src="app.js">
+
+    </script>
+  </body>
+</html>
